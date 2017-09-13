@@ -1,0 +1,7 @@
+<div>
+  <div><img src="{{productItem.image}}" alt=""></div>
+  <h4>{{productItem.name}}</h4>
+  <p>{{productItem.price}}</p>
+  <a [routerLink]="['edit', productItem._id]">Edit</a>
+  <a (click)="deleteProd(productItem._id)">Delete</a>
+</div>
